@@ -1,0 +1,23 @@
+/*-------------FOOTER-------------*/
+.generalContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex-grow: 1;
+    background-color: white;
+}
+
+main {
+    flex-grow: 6;
+    background-color: white;
+}
+
+footer {
+    flex-grow: 1;
+    background-color: chartreuse;
+}
+/*-------------MAIN-------------*/

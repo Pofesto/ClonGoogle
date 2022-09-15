@@ -1,0 +1,24 @@
+/*-------------FOOTER-------------*/
+.opcionesHeader {
+    font-size: 1.5rem;
+    list-style: none;
+}
+.menuHeader {
+    background-image: url(../assets/icons/menu.png);
+    background-size: cover;
+    transition: all;
+    transition-duration: 0.1s;
+    background-clip: content-box;
+}
+.imagenPerfilHeader {
+    background-image: url(../assets/logos/logoPerfil.jpg);
+    background-size: cover;
+    transition: all;
+    transition-duration: 0.1s;
+}
+/*-------------MAIN-------------*/
+.logoGoogle {
+    background-image: url(../assets/logos/logoGoogle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
