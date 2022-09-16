@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="movil/style.css">
-    <link rel="stylesheet" href="tablet/tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="tablet/tablet.css" media="screen and (min-width: 682px)">
     <link rel="stylesheet" href="desktop/desktop.css" media="screen and (min-width: 800px)">
     <title>Clon Google</title>
 </head>
@@ -25,31 +25,45 @@
         </header>
 
 
-        <main>
+        <main class="font">
             <section class="buscador">
                 <div class="logoGoogle"></div>
                 <form action="#" class="formBuscador">
                     <div class="barraBuscador">
                         <div class="logoLupa"></div>
-                        <label for="texto">
-                            <input type="text" id="texto">
-                        </label>
+                        <input type="text" id="texto">
                         <div class="logoMicrofono"></div>
                     </div>
                     <br>
-                    <label for="buscar" class="buttonBuscar">
-                        <input type="button" id="buscar" value="Buscar">
-                    </label>
-                    <label for="suerte" class="buttonSuerte">
-                        <input type="button" id="suerte" value="Suerte">
-                    </label>
+                    <div class="botones">
+                        <button class="buttonBuscar button">
+                            Buscar con Google
+                        </button>
+                        <div class="separadorBotones"></div>
+                        <button class="buttonSuerte button">
+                            Voy a tener suerte
+                        </button>
+                    </div>
+                    
                 </form>
             </section>
         </main>
 
 
-        <footer>
-
+        <footer class="font">
+            <section class="sectionFooter">
+                <ul class="footerIzquierdo">
+                    <li class="opcionIzquierdo">Sobre Google</li>
+                    <li class="opcionIzquierdo">Publicidad</li>
+                    <li class="opcionIzquierdo">Negocios</li>
+                    <li class="opcionIzquierdo">Cómo funciona la Búsqueda</li>
+                </ul>
+                <ul class="footerDerecho">
+                    <li class="opcionDerecho">Privacidad</li>
+                    <li class="opcionDerecho">Condiciones</li>
+                    <li class="opcionDerecho">Preferencias</li>
+                </ul>
+            </section>
         </footer>
     </div>
 </body>

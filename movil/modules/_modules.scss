@@ -1,4 +1,4 @@
-/*-------------FOOTER-------------*/
+/*-------------HEADER-------------*/
 .headerContainer {
     display: flex;
     justify-content: end;
@@ -40,33 +40,89 @@
     flex-direction: column;
     justify-content: center;
 }
-.logoGoogle {
-    position: relative;
-    top: 10px;
-    width: 60%;
-    height: 100px;
-}
 .formBuscador {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.barraBuscador {
-    width: 80vw;
-    height: 40px;
-    background-color: aqua;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
+.barraBuscador {
+    position: relative;
+    top: 30px;
+    width: 80vw;
+    max-width: 580px;
+    height: 46px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logoGoogle {
+    position: relative;
+    top: 9px;
+    width: 60%;
+    max-width: 270px;
+    height: 100px;
+}
+
 .logoLupa {
-    
+    position: absolute;
+    left: 14px;
+    width: 20px;
+    height: 20px;
+}
+.logoMicrofono {
+    position: absolute;
+    right: 14px;
+    width: 20px;
+    height: 20px;
 }
 #texto {
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
+    width: 70%;
     height: 40px;
-    border: 0px solid transparent;
+}
+.botones {
+    position: relative;
+    top: 47px;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.separadorBotones {
+    width: 10px;
+}
+.button {
+    width: 155px;
+    height: 35px;
+}
+.buttonBuscar {
+    // margin-right: 13px;
+}
+/*-------------FOOTER-------------*/
+.sectionFooter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 419px;
+}
+.footerDerecho, .footerIzquierdo {
+    position: relative;
+    top: none;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.opcionIzquierdo, .opcionDerecho {
+    margin-right: 10px;
+}
+footer {
+    display: flex;
+    justify-content: center;
 }

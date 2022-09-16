@@ -1,0 +1,28 @@
+.sectionFooter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 100vw;
+}
+.footerDerecho, .footerIzquierdo {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.opcionIzquierdo, .opcionDerecho {
+    
+}
+.opcionIzquierdo {
+    position: relative;
+    left: 35px;
+}
+.opcionDerecho {
+    position: relative;
+    right:35px;
+}

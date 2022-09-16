@@ -6,7 +6,7 @@
 html {
   font-size: 62.5%; }
 
-/*-------------FOOTER-------------*/
+/*-------------HEADER-------------*/
 .headerContainer {
   display: flex;
   justify-content: end; }
@@ -48,34 +48,88 @@ html {
   flex-direction: column;
   justify-content: center; }
 
-.logoGoogle {
-  position: relative;
-  top: 10px;
-  width: 60%;
-  height: 100px; }
-
 .formBuscador {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
-
-.barraBuscador {
-  width: 80vw;
-  height: 40px;
-  background-color: aqua;
-  border-radius: 40px;
-  display: flex;
   justify-content: center;
   align-items: center; }
 
+.barraBuscador {
+  position: relative;
+  top: 30px;
+  width: 80vw;
+  max-width: 580px;
+  height: 46px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.logoGoogle {
+  position: relative;
+  top: 9px;
+  width: 60%;
+  max-width: 270px;
+  height: 100px; }
+
+.logoLupa {
+  position: absolute;
+  left: 14px;
+  width: 20px;
+  height: 20px; }
+
+.logoMicrofono {
+  position: absolute;
+  right: 14px;
+  width: 20px;
+  height: 20px; }
+
 #texto {
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  height: 40px;
-  border: 0px solid transparent; }
+  width: 70%;
+  height: 40px; }
+
+.botones {
+  position: relative;
+  top: 47px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.separadorBotones {
+  width: 10px; }
+
+.button {
+  width: 155px;
+  height: 35px; }
 
 /*-------------FOOTER-------------*/
+.sectionFooter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 419px; }
+
+.footerDerecho, .footerIzquierdo {
+  position: relative;
+  top: none;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.opcionIzquierdo, .opcionDerecho {
+  margin-right: 10px; }
+
+footer {
+  display: flex;
+  justify-content: center; }
+
+/*-------------HEADER-------------*/
 .opcionesHeader {
   font-size: 1.5rem;
   list-style: none; }
@@ -99,6 +153,35 @@ html {
   background-size: contain;
   background-repeat: no-repeat; }
 
+.logoMicrofono {
+  background-image: url(../assets/icons/microfono.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: opacity(70%); }
+
+.logoLupa {
+  background-image: url(../assets/icons/lupa.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: opacity(80%); }
+
+.barraBuscador {
+  background-color: white;
+  border: 1px solid #e1e2e6; }
+
+#texto {
+  background-color: transparent;
+  border: 0px solid transparent; }
+
+.button {
+  border: 0px solid transparent;
+  background-color: #f8f9fa; }
+
+/*-------------FOOTER-------------*/
+.font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px; }
+
 /*-------------FOOTER-------------*/
 .generalContainer {
   width: 100vw;
@@ -116,10 +199,10 @@ main {
 
 footer {
   flex-grow: 1;
-  background-color: chartreuse; }
+  background-color: #f2f2f2; }
 
 /*-------------MAIN-------------*/
-/*-------------FOOTER-------------*/
+/*-------------HEADER-------------*/
 .menuHeader:hover {
   box-shadow: 0px 0px 0px 10px #f0f0f0;
   background-color: #f0f0f0;
@@ -134,5 +217,17 @@ footer {
   cursor: pointer; }
 
 /*-------------MAIN-------------*/
+@media (max-width: 319px) {
+  .botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+  .buttonSuerte {
+    margin-top: 10px; } }
+/*-------------FOOTER-------------*/
+.opcionIzquierdo:hover, .opcionDerecho:hover {
+  text-decoration: underline;
+  cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
